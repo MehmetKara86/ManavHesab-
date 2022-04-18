@@ -1,0 +1,72 @@
+/* Author :Mehmet KARA
+   Date: 18.04.2022-08:40
+   Program Name: Manav Hesabı
+ */
+
+import java.util.Scanner;
+
+public class ManavHesabi {
+
+    public static void main (String[] arg){
+
+        double armut=2.14, elma=3.67, domates=1.11, muz=0.95, patlican=5;
+
+        double armutKg, elmaKg, domatkg, muzKg, patKg;
+
+        double armutFyt, elmaFyt, domatFyt, muzFyt, patFyt;
+
+        double toplamFyt;
+
+        Scanner kg = new Scanner(System.in);
+
+        System.out.println("Lutfen aldiginiz sebze ve meyvenin kg ini giriniz.");
+
+        System.out.print("Armut kg: ");
+
+        armutKg = kg.nextDouble();
+
+        System.out.print("Elma kg: ");
+
+        elmaKg = kg.nextDouble();
+
+        System.out.print("Domates kg: ");
+
+        domatkg = kg.nextDouble();
+
+        System.out.print("Muz kg: ");
+
+        muzKg = kg.nextDouble();
+
+        System.out.print("Patlican kg: ");
+
+        patKg = kg.nextDouble();
+
+        armutFyt = armut * armutKg;
+
+        elmaFyt=elma * elmaKg;
+
+        domatFyt=domates * domatkg;
+
+        muzFyt=muz * muzKg;
+
+        patFyt=patlican * patKg;
+
+        System.out.println("Armut: "+ armutFyt + "TL" );
+
+        System.out.println("Elma: "+ elmaFyt + "TL" );
+
+        System.out.println("Domates: "+ domatFyt + "TL" );
+
+        System.out.println("Muz: "+ muzFyt + "TL" );
+
+        System.out.println("Patlican: "+ patFyt + "TL" );
+
+        toplamFyt = armutFyt + elmaFyt + domatFyt + muzFyt + patFyt;
+
+        System.out.println("Odemeniz gereken tutar: " + toplamFyt + "TL dir.");
+
+        System.out.println("İyi günler diler yine bekleriz.");
+
+
+    }
+}
